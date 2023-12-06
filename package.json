@@ -1,6 +1,6 @@
 {
   "name": "ck-util-components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -53,10 +53,13 @@
     "type": "git",
     "url": "git+https://github.com/NaveOWO/navrary-CK-util-componenets.git"
   },
-  "author": "",
+  "author": "CK",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NaveOWO/navrary-CK-util-componenets/issues"
   },
-  "homepage": "https://github.com/NaveOWO/navrary-CK-util-componenets#readme"
+  "keywords": [
+    "select",
+    "compound-component"
+  ]
 }
