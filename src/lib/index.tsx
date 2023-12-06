@@ -1,1 +1,1 @@
-export { default as Select } from "../components/select/select";
+export { default as Dialog } from "../components/dialog/Dialog";
