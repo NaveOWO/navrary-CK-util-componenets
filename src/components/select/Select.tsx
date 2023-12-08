@@ -1,45 +1,15 @@
 import React from "react";
 import { createContext } from "../../utils/createContext";
-import { DefaultProps } from "../common/type";
 import { useExternalState } from "../../hooks/useExternalState";
 import { getCustomElement, getNarrowTypedProps } from "../../utils/dom";
-
-type SelectDefaultValuesType = {
-  select: (option: number) => void;
-  selectedOption: number | null;
-  open: boolean;
-  toggleSelectBox: () => void;
-};
-
-type SelectRootProps = {
-  externalSelectedOption?: number | null;
-  defalutSelected?: number;
-  onSelectChange?: (state?: number | null) => void;
-  externalOpen?: boolean;
-  defaultOpen?: boolean;
-  onOpenChange?: (state: boolean | undefined) => void;
-} & DefaultProps;
-
-type SelectTriggerProps = DefaultProps & {
-  className?: string;
-  onTriggerClick?: (e: MouseEvent) => void;
-};
-
-type SelectOptionGroupProps = DefaultProps & {
-  className?: string;
-};
-
-type SelecOptionProps = DefaultProps & {
-  className?: string;
-  onOptionClick?: (e: MouseEvent) => void;
-  id: number;
-};
-
-type SelectValueProps<T> = DefaultProps & {
-  className?: string;
-  options: Record<number, T>;
-  defautlValue?: T;
-};
+import {
+  SelecOptionProps,
+  SelectDefaultValuesType,
+  SelectOptionGroupProps,
+  SelectRootProps,
+  SelectTriggerProps,
+  SelectValueProps,
+} from "./select.type";
 
 const selectDefaultValues: SelectDefaultValuesType = {
   select: (option: number) => {},
