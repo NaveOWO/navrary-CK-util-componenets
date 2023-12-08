@@ -4,6 +4,7 @@ import {
   cloneElement,
   isValidElement,
   ReactElement,
+  ReactNode,
 } from "react";
 import { DefaultProps } from "../components/common/type";
 
@@ -17,10 +18,11 @@ const validateCustomChildren = (children: ReactElement) => {
 
 export const getCustomElement = <P extends Partial<P> & Attributes>(
   children: ReactElement,
-  props: P
+  props: P,
+  innerChild?: ReactNode
 ) => {
   if (validateCustomChildren(children)) {
-    return cloneElement(getValidChild(children), props);
+    return cloneElement(getValidChild(children), props, innerChild);
   }
   throw Error("Invalid React Element!");
 };
