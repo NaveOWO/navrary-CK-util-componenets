@@ -34,7 +34,11 @@ export function createContext<TDefaultValues>(
   function useContext() {
     const value = React.useContext(Context);
 
-    if (!value) return;
+    if (!value) {
+      throw Error(
+        `This function can only be used within ${contextName}context.`
+      );
+    }
 
     return value;
   }
