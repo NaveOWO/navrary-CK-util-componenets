@@ -1,4 +1,3 @@
-import { SetStateAction } from "react";
 import { DefaultProps } from "../common/type";
 
 export type DialogDefalutValuesType = {
@@ -11,7 +10,7 @@ export type DialogDefalutValuesType = {
 export type DialogRootProps = {
   externalOpen?: boolean;
   defaultOpen?: boolean;
-  onOpenChange?: (state: boolean | undefined) => void;
+  onOpenChange?: (state?: boolean) => void;
 } & DefaultProps;
 
 export type DialogTriggerProps = DefaultProps & {
