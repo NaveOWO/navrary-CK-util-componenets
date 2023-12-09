@@ -22,7 +22,9 @@ export const getCustomElement = <P extends Partial<P> & Attributes>(
   innerChild?: ReactNode
 ) => {
   if (validateCustomChildren(children)) {
-    return cloneElement(getValidChild(children), props, innerChild);
+    return innerChild
+      ? cloneElement(getValidChild(children), props, innerChild)
+      : cloneElement(getValidChild(children), props);
   }
   throw Error("Invalid React Element!");
 };
