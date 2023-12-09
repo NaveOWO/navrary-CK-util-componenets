@@ -145,9 +145,9 @@ function DialogContent(props: DialogContentProps) {
 }
 
 const Dialog = Object.assign(DialogRoot, {
-  DialogTrigger,
-  DialogBackDrop,
-  DialogContent,
+  Trigger: DialogTrigger,
+  BackDrop: DialogBackDrop,
+  Content: DialogContent,
 });
 
 export default Dialog;
