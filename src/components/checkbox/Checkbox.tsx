@@ -53,7 +53,6 @@ function CheckBoxIndicator(props: CheckBoxIndicatorProps) {
   const { checked, toggleCheckBox, id } = CheckBoxUseContext();
 
   const handleClick = (e: MouseEvent) => {
-    console.log("nono");
     if (asChild) {
       restProps.onIndicatorClick?.(e);
     }
