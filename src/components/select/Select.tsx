@@ -12,7 +12,7 @@ import {
 } from "./select.type";
 
 const selectDefaultValues: SelectDefaultValuesType = {
-  select: (option: number) => {},
+  select: (option: any) => {},
   selectedOption: null,
   open: false,
   toggleSelectBox: () => {},
@@ -53,7 +53,7 @@ function SelectRoot(props: SelectRootProps) {
     open ? setOpen(false) : setOpen(true);
   };
 
-  const select = (option: number) => {
+  const select = (option: SelectRootProps["externalSelectedOption"]) => {
     setSelectedOption(option);
   };
 
