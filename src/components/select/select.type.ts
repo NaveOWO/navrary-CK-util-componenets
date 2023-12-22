@@ -1,19 +1,19 @@
 import { DefaultProps } from "../common/type";
 
 export type SelectDefaultValuesType = {
-  select: (option: number) => void;
-  selectedOption: number | null;
+  select: (option: any) => void;
+  selectedOption: any;
   open: boolean;
   toggleSelectBox: () => void;
 };
 
 export type SelectRootProps = {
-  externalSelectedOption?: number | null;
-  defalutSelected?: number;
-  onSelectChange?: (state?: number | null) => void;
+  externalSelectedOption?: any;
+  defalutSelected?: any;
+  onSelectChange?: (state?: any) => void;
   externalOpen?: boolean;
   defaultOpen?: boolean;
-  onOpenChange?: (state: boolean | undefined) => void;
+  onOpenChange?: (state?: boolean) => void;
 } & DefaultProps;
 
 export type SelectTriggerProps = DefaultProps & {
