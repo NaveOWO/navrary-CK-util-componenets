@@ -71,6 +71,8 @@ function SelectTrigger(props: SelectTriggerProps) {
   const { toggleSelectBox } = SelectUseContext();
 
   const handleClick = (e: MouseEvent) => {
+    e.preventDefault();
+
     if (asChild) {
       restProps.onTriggerClick?.(e);
     }
