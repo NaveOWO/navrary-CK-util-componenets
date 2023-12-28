@@ -80,7 +80,7 @@ function DialogTrigger(props: DialogTriggerProps) {
 
 function DialogBackDrop(props: DialogBackDropProps) {
   const { asChild, children, ...restProps } = getNarrowTypedProps(props);
-  const { closeDialog } = DialogUseContext();
+  const { open, closeDialog } = DialogUseContext();
 
   useEffect(() => {
     document
@@ -97,11 +97,13 @@ function DialogBackDrop(props: DialogBackDropProps) {
   };
 
   if (asChild) {
-    return getCustomElement(children, {
-      className: restProps.className,
-      onClick: handleClick,
-      id: "navrary-dialog-backdrop",
-    });
+    return open
+      ? getCustomElement(children, {
+          className: restProps.className,
+          onClick: handleClick,
+          id: "navrary-dialog-backdrop",
+        })
+      : null;
   }
 
   return (
