@@ -108,7 +108,7 @@ function SelectOptionGroup(props: SelectOptionGroupProps) {
   return open ? <ul className={restProps.className}>{children}</ul> : null;
 }
 
-function SelectOption(props: SelecOptionProps) {
+function SelectOption<T extends number | string>(props: SelecOptionProps<T>) {
   const { asChild, children, ...restProps } = getNarrowTypedProps(props);
   const { selectedOption, select } = SelectUseContext();
   const isSelected = restProps.id === selectedOption;
