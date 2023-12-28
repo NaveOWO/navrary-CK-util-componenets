@@ -25,10 +25,10 @@ export type SelectOptionGroupProps = DefaultProps & {
   className?: string;
 };
 
-export type SelecOptionProps = DefaultProps & {
+export type SelecOptionProps<T extends number | string> = DefaultProps & {
   className?: string;
   onOptionClick?: (e: MouseEvent) => void;
-  id: number;
+  id: T;
 };
 
 export type SelectValueProps<T> = DefaultProps & {
