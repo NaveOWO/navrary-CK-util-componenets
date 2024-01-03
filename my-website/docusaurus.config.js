@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Navrary-ck-util-components",
+  title: "navrary-util-components",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
@@ -16,12 +16,12 @@ const config = {
   url: "https://NaveOWO.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/navrary-CK-util-componenets/",
+  baseUrl: "/navrary-util-components/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "NaveOWO", // Usually your GitHub org/user name.
-  projectName: "navrary-CK-util-componenets", // Usually your repo name.
+  projectName: "navrary-util-components", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -79,7 +79,7 @@ const config = {
             label: "Tutorial",
           },
           {
-            href: "https://github.com/NaveOWO/navrary-CK-util-componenets",
+            href: "https://github.com/NaveOWO/navrary-util-components",
             label: "GitHub",
             position: "right",
           },
