@@ -1,6 +1,6 @@
 {
-  "name": "ck-util-components",
-  "version": "1.4.0",
+  "name": "navrary-util-components",
+  "version": "1.5.0",
   "private": false,
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -51,15 +51,15 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NaveOWO/navrary-CK-util-componenets.git"
+    "url": "git+https://github.com/NaveOWO/navrary-util-components.git"
   },
   "author": "CK",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NaveOWO/navrary-CK-util-componenets/issues"
+    "url": "https://github.com/NaveOWO/navrary-util-components/issues"
   },
   "keywords": [
-    "select",
+    "util components",
     "compound-component"
   ],
   "homepage": "https://NaveOWO.github.io/navrary-util-components"
