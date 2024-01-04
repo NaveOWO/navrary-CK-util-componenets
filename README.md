@@ -12,4 +12,4 @@ npm i navrary-util-components
 
 ### Docs
 
-[Usage Link](http://www.google.co.kr](https://naveowo.github.io/navrary-util-components/)https://naveowo.github.io/navrary-util-components/)
+[Usage Link](https://naveowo.github.io/navrary-util-components/docs/Overview/Introduce)
